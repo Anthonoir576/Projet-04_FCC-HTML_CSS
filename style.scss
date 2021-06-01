@@ -1,0 +1,415 @@
+// variable 
+$blueperso: #1e3d59;
+$beigeperso: #f5f0e1; 
+
+// ################ propriété global  ##############################
+body {
+
+   
+    background-color: rgba(245, 240, 225, 0.5); // $beigeperso modifier
+    color: $blueperso;
+
+    & p {
+
+        font-size: 1.3em;
+        text-align: justify;
+
+    }
+
+    & li {
+
+        font-size: 1.3em;
+
+    }
+
+    & ul {
+
+        margin-top: 3em;
+        margin-bottom: 3em;
+
+    }
+
+    & h2 {
+
+        font-size: 2em;
+        font-weight: 400;
+        text-decoration: underline;
+        font-style: oblique;
+
+    }
+
+}
+
+#main-doc {
+
+        // TOUS LES HEADER du main ! ATTENTION
+        & header {   
+
+            margin-bottom: 1em;
+            padding: 0.25em 0.5em;
+            margin-left: 0.5em;
+            
+            
+            font-size: 2em;
+            border: 2px solid $blueperso;
+            border-radius: 5px;
+            text-align: left;
+            width: 8.5em;           
+            
+            background-color: $blueperso;
+            color: $beigeperso;
+
+        }
+
+}
+
+// #####################################################################
+
+// block PAGE
+#bloc-page {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+// Navigation
+#nav-bar {
+
+   // display: none; // A retirer pour faire apparaitre la bar
+    position: fixed;
+    left: -0.1em;
+    top: -0.05em;
+
+    width: 400px;
+    height: 100%;
+
+    padding: 1em;
+    padding-right: 1.5em;
+
+    border: 1px solid black;
+    background-color: $blueperso;
+    color: $beigeperso;
+
+    & header {
+
+        margin-bottom: 1.45em;
+        padding: 0.5em;
+        margin-left: 0.1em;
+
+        font-size: 2em;
+        border: 1px solid $beigeperso;
+        border-radius: 10px;
+
+    }
+
+    & ul {
+
+        list-style-type: none;
+
+    }
+
+    & li {
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.9em;
+        
+
+        position: relative;
+        right: 1.5em;
+
+        font-size: 1.2em;
+
+    }
+
+    & a {
+
+        text-decoration: none;
+        color: $beigeperso;
+        border: 1px solid $blueperso;
+        border-radius: 10px;
+        padding: 0.5em 1em;
+
+        &:hover {
+
+            border: 1px solid $beigeperso;
+            border-radius: 10px;
+            transform: scale(1.25); 
+
+        }
+    }
+}
+
+// MAIN DOCUMENT
+#main-doc {
+
+    margin-left: 480px;
+    margin-right: 3em;
+
+    color: $blueperso;
+
+    & h1 {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 0.22em;
+        margin-bottom: 2em;
+        padding: 1em 0;
+
+        border: 2px solid $blueperso;
+        border-radius: 5px;
+        background-color: $blueperso;
+        color: $beigeperso;
+
+    }
+}
+
+// section 01
+#introduction {
+
+    display: flex;
+    flex-direction: column;
+
+    & p {
+
+        margin-bottom: 0.5em;
+
+    }
+
+    & h2 {
+
+        margin-top: 5em;
+        margin-bottom: 2em;
+
+    }
+
+    
+    & header {   
+
+        margin-bottom: 1em;
+        padding: 0.25em 0.1em 0.25em 0.5em;
+
+        font-size: 2em;
+        border: 2px solid $blueperso;
+        text-align: left;
+        width: 8.5em;             
+
+    }
+
+    & ul {
+
+        background-color: white;
+        border: px solid white;
+        border-radius: 15px;
+        max-width: 1125px;
+        padding: 0.8em 2em 2em 4em;
+
+    }
+
+}
+
+// section 02
+#AIDE_HTML_5 {
+
+    text-align: center;
+
+
+    & header {
+
+        margin-top: 5em;
+        margin-bottom: 2em;
+        width: 6.8em;
+
+    }
+
+    & h2 {
+
+        margin-bottom: 2em;
+
+    }
+
+    & p {
+
+        text-align: left; 
+ 
+     }
+
+}
+.htmlHelp {
+
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 1em 2em 1em 2em;
+    
+    max-width: 1400px;
+    margin-left: 2em;
+    margin-bottom: 5em;
+
+}
+
+// section 03
+#AIDE_CSS_3 {
+
+    text-align: center;
+
+    & header {
+
+        width: 6em;
+
+    }
+
+    & p {
+
+       text-align: center; 
+
+    }
+
+}
+.cssHelp {
+
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 1em 2em 1em 2em;
+    
+    max-width: 1400px;
+    margin-left: 2em;
+    margin-bottom: 5em;    
+
+    & em {
+
+        font-size: 1.5em;
+        font-weight: 400;
+        text-decoration: underline;
+        font-style: oblique;
+
+    }
+}
+
+// section 04
+#AIDE_RESPONSIVE {
+
+    & header {
+
+        width: 6.7em;
+        padding: 0.5em;
+
+        margin-bottom: 2em;
+    }
+
+}
+
+// section 05
+#AIDE_JAVASCRIPT {
+
+    & header {
+
+        width: 6.5em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+
+    }
+
+}
+
+// section 06
+#AIDE_SQL {
+
+    & header {
+
+        width: 2.5em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+
+    }
+
+}
+
+// section 07
+#AIDE_PHP {
+
+    & header {
+
+        width: 2.5em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+
+    }    
+
+}
+
+//section 08 
+#AIDE_DEPANNAGE {
+
+    & header {
+
+        width: 6.7em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+
+    }    
+
+}
+
+
+#REFERENCE {
+
+    & header {
+
+        width: 6.7em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+
+    }
+
+    & article {
+
+        
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 1em 2em 1em 2em;
+        
+        max-width: 1400px;
+        margin-left: 2em;
+        margin-bottom: 5em;
+
+    }
+}
+
+#QUI_SOMMES_NOUS {
+
+    & header {
+
+        width: 10em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+
+    }
+
+    & p {
+
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 1em 2em 1em 2em;
+        
+        max-width: 1400px;
+        margin-left: 2em;
+        margin-top: 10em;
+
+        text-align: center;
+
+    }
+}
+
+#end {
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2em;
+
+}
